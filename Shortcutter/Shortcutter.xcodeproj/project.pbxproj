@@ -18,6 +18,9 @@
 		FA87BF30291D94FC003759A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF2F291D94FC003759A8 /* HomeView.swift */; };
 		FA87BF32291D95B3003759A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF31291D95B3003759A8 /* HomeViewModel.swift */; };
 		FA87BF33291D95B3003759A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF31291D95B3003759A8 /* HomeViewModel.swift */; };
+		FA87BF36291DA100003759A8 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF35291DA100003759A8 /* Comic.swift */; };
+		FA87BF37291DA100003759A8 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF35291DA100003759A8 /* Comic.swift */; };
+		FA87BF39291DA1D9003759A8 /* CurrentComicTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA87BF34291D9DDA003759A8 /* CurrentComicTestData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		FA87BF2D291D9423003759A8 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		FA87BF2F291D94FC003759A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FA87BF31291D95B3003759A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA87BF34291D9DDA003759A8 /* CurrentComicTestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentComicTestData.json; sourceTree = "<group>"; };
+		FA87BF35291DA100003759A8 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FA87BEF7291D8AFB003759A8 /* Shortcutter */,
+				FA87BF38291DA180003759A8 /* TestData */,
 				FA87BF08291D8AFC003759A8 /* ShortcutterTests */,
 				FA87BF12291D8AFC003759A8 /* ShortcutterUITests */,
 				FA87BEF6291D8AFB003759A8 /* Products */,
@@ -191,6 +197,7 @@
 		FA87BF28291D9028003759A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA87BF35291DA100003759A8 /* Comic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +230,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA87BF38291DA180003759A8 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				FA87BF34291D9DDA003759A8 /* CurrentComicTestData.json */,
+			);
+			path = TestData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA87BF39291DA1D9003759A8 /* CurrentComicTestData.json in Resources */,
 				FA87BF00291D8AFC003759A8 /* Preview Assets.xcassets in Resources */,
 				FA87BEFD291D8AFC003759A8 /* Assets.xcassets in Resources */,
 			);
@@ -356,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA87BEFB291D8AFB003759A8 /* RootView.swift in Sources */,
+				FA87BF36291DA100003759A8 /* Comic.swift in Sources */,
 				FA87BF30291D94FC003759A8 /* HomeView.swift in Sources */,
 				FA87BF2E291D9423003759A8 /* TabController.swift in Sources */,
 				FA87BF32291D95B3003759A8 /* HomeViewModel.swift in Sources */,
@@ -368,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA87BF0A291D8AFC003759A8 /* ShortcutterTests.swift in Sources */,
+				FA87BF37291DA100003759A8 /* Comic.swift in Sources */,
 				FA87BF33291D95B3003759A8 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
