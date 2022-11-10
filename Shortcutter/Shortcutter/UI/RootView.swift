@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct RootView: View {
+    @StateObject private var tabController = TabController()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $tabController.activeTab) {
+            HomeView()
+                .tag(Tab.home)
+                .tabItem { Label("", systemImage: "photo") }
+            HomeView()
+                .tag(Tab.offline)
+                .tabItem { Label("", systemImage: "archivebox.fill")}
         }
-        .padding()
     }
 }
