@@ -9,23 +9,33 @@ import Foundation
 
 extension HomeView {
     @MainActor class HomeViewModel: ObservableObject {
+        //MARK: - Dependencies
+        let comicRepo: ComicRepositoryProtocol
+        
+        //MARK: - Outlets
         @Published var title: String?
         
-        init() {
+        //MARK: - Init
+        init(comicRepo: ComicRepositoryProtocol = ComicRepository()) {
+            self.comicRepo = comicRepo
             getData()
         }
         
         private func getData() {
-            let decoder = JSONDecoder()
-            
-            if let file = Bundle(for: type(of: self)).url(forResource: "CurrentComicTestData", withExtension: "json") {
-                let data = try! Data(contentsOf: file)
-                if let comic = try? decoder.decode(Comic.self, from: data) {
-                    title = comic.title
-                }
-            } else {
-                print("fail")
-            }
+            self.comicRepo.get(comics: .current)
         }
     }
 }
+
+/*
+ let decoder = JSONDecoder()
+ 
+ if let file = Bundle(for: type(of: self)).url(forResource: "CurrentComicTestData", withExtension: "json") {
+     let data = try! Data(contentsOf: file)
+     if let comic = try? decoder.decode(Comic.self, from: data) {
+         title = comic.title
+     }
+ } else {
+     print("fail")
+ }
+ */
