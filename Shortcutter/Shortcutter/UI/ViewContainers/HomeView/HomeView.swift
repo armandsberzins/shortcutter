@@ -19,13 +19,25 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                Button("Load more comics", action: {
-                    homeViewModel.getNext()
-                })
+                if homeViewModel.error == nil {
+                    Button("Load more comics", action: {
+                        homeViewModel.getNext()
+                    })
+                }
             } else {
                 ProgressView()
             }
+            
+            if homeViewModel.error != nil {
+                Button("Try again load comics", action: {
+                    homeViewModel.getNext()
+                })
+            }
         }
         .padding()
+        .alert(
+            isPresented: $homeViewModel.showAlert,
+            content: { Alert(title: Text(homeViewModel.error?.description ?? "")) }
+        )
     }
 }
