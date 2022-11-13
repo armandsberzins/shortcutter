@@ -14,8 +14,6 @@ enum GetComicsType {
     case custom(Int)
 }
 
-typealias Comics = [Comic]
-
 protocol ComicRepositoryProtocol {
     func get(_ comics: GetComicsType) -> Future<Comic, ApiError>
    // func getNextTenComics(from staring: Int) -> Future<Comics, ApiError>
@@ -31,13 +29,10 @@ class ComicRepository: ComicRepositoryProtocol {
     internal func get(_ comic: GetComicsType) -> Future<Comic, ApiError> {
         Future { promise in
             let successHandler: (Comic) throws -> Void = { comic in
-                //publish comic
-                print("\(comic.title) : \(comic.num!)")
                 promise(.success(comic))
             }
             
             let errorHandler: (ApiError) -> Void = { networkManagerError in
-                //publish errpo
                 print(networkManagerError.description)
                 promise(.failure(networkManagerError))
             }
@@ -47,8 +42,5 @@ class ComicRepository: ComicRepositoryProtocol {
                                     errorHandler: errorHandler)
         }
 
-    }
-    
-//    private func succesHandler() (Comic) throws -> Void {
-    
+    }   
 }

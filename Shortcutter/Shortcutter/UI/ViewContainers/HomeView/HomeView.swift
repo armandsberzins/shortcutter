@@ -14,15 +14,17 @@ struct HomeView: View {
         VStack {
             if let comics = homeViewModel.comics {
                 List(comics) { comic in
-                    Text(comic.title ?? "")
+                    ComicCell(properties: comic)
                 }.navigationTitle("Comics")
+                
+                Spacer()
+                
+                Button("Load more comics", action: {
+                    homeViewModel.getNext()
+                })
             } else {
-                Text("No Comics :/")
+                ProgressView()
             }
-            
-            Button("Load more comics", action: {
-                homeViewModel.getNext()
-            })
         }
         .padding()
     }
