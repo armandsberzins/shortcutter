@@ -18,6 +18,8 @@
 		FA3837392921308A00D538C6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA3837382921308A00D538C6 /* Kingfisher */; };
 		FA65AECC291FB20300BD723A /* ComicRepository+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */; };
 		FA71EE3329214E1D00AC3A30 /* String+ValidUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71EE3229214E1D00AC3A30 /* String+ValidUrl.swift */; };
+		FA71EE3529216F1A00AC3A30 /* ComicRepository+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */; };
+		FA71EE472921982E00AC3A30 /* ComicStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71EE462921982E00AC3A30 /* ComicStorage.swift */; };
 		FA7266D6291F9C110028964B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D5291F9C110028964B /* NetworkManager.swift */; };
 		FA7266D9291F9CAA0028964B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D8291F9CAA0028964B /* ReachabilityManager.swift */; };
 		FA87BEF9291D8AFB003759A8 /* ShortcutterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BEF8291D8AFB003759A8 /* ShortcutterApp.swift */; };
@@ -55,6 +57,7 @@
 		FA3837322921268C00D538C6 /* ComicCellProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCellProperties.swift; sourceTree = "<group>"; };
 		FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComicRepository+Constants.swift"; sourceTree = "<group>"; };
 		FA71EE3229214E1D00AC3A30 /* String+ValidUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidUrl.swift"; sourceTree = "<group>"; };
+		FA71EE462921982E00AC3A30 /* ComicStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicStorage.swift; sourceTree = "<group>"; };
 		FA7266D2291F97F70028964B /* ComicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRepository.swift; sourceTree = "<group>"; };
 		FA7266D5291F9C110028964B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA7266D8291F9CAA0028964B /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
@@ -108,6 +111,24 @@
 				FA3837322921268C00D538C6 /* ComicCellProperties.swift */,
 			);
 			path = ComicCell;
+			sourceTree = "<group>";
+		};
+		FA71EE3429216F1200AC3A30 /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */,
+				FA7266D2291F97F70028964B /* ComicRepository.swift */,
+				FA71EE462921982E00AC3A30 /* ComicStorage.swift */,
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		FA71EE3D2921718500AC3A30 /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				FA87BF35291DA100003759A8 /* Comic.swift */,
+			);
+			path = Comic;
 			sourceTree = "<group>";
 		};
 		FA87BEEC291D8AFB003759A8 = {
@@ -220,8 +241,7 @@
 		FA87BF27291D8FFC003759A8 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				FA7266D2291F97F70028964B /* ComicRepository.swift */,
-				FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */,
+				FA71EE3429216F1200AC3A30 /* Comic */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -229,7 +249,7 @@
 		FA87BF28291D9028003759A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FA87BF35291DA100003759A8 /* Comic.swift */,
+				FA71EE3D2921718500AC3A30 /* Comic */,
 				FA7266DE291F9DEE0028964B /* ApiError.swift */,
 			);
 			path = Models;
@@ -415,6 +435,7 @@
 				FA3837232921190000D538C6 /* ApiError.swift in Sources */,
 				FA87BEFB291D8AFB003759A8 /* RootView.swift in Sources */,
 				FA87BF36291DA100003759A8 /* Comic.swift in Sources */,
+				FA71EE472921982E00AC3A30 /* ComicStorage.swift in Sources */,
 				FA87BF30291D94FC003759A8 /* HomeView.swift in Sources */,
 				FA7266D9291F9CAA0028964B /* ReachabilityManager.swift in Sources */,
 				FA7266D6291F9C110028964B /* NetworkManager.swift in Sources */,
@@ -433,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA38372E29211F8200D538C6 /* ComicRepository.swift in Sources */,
+				FA71EE3529216F1A00AC3A30 /* ComicRepository+Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
