@@ -15,7 +15,7 @@ extension HomeView {
         let comicRepo: ComicRepositoryProtocol
         
         //MARK: - Outlets
-        @Published var comics: Comics?
+        @Published var comics: ComicsViewProperies?
         
         //MARK: - Constant
         let kDefaultIssueAmountForLaod = 10
@@ -57,10 +57,14 @@ extension HomeView {
         //MARK: - Handle received data
         
         private func add(_ comic: Comic) {
+            let cellModel = ComicCellPorperties(title: comic.title,
+                                                issue: comic.num,
+                                                imageUrl: comic.img)
+            
             if self.comics == nil {
-                self.comics = Comics(arrayLiteral: comic)
+                self.comics = ComicsViewProperies(arrayLiteral: cellModel)
             } else {
-                self.comics?.append(comic)
+                self.comics?.append(cellModel)
             }
         }
         

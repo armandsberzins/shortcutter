@@ -7,28 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3837222920FAA000D538C6 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3837212920FAA000D538C6 /* ComicCell.swift */; };
+		FA3837232921190000D538C6 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266DE291F9DEE0028964B /* ApiError.swift */; };
+		FA3837242921192000D538C6 /* ComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D2291F97F70028964B /* ComicRepository.swift */; };
+		FA38372A29211A6A00D538C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF2F291D94FC003759A8 /* HomeView.swift */; };
+		FA38372C29211DB400D538C6 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3837212920FAA000D538C6 /* ComicCell.swift */; };
+		FA38372E29211F8200D538C6 /* ComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D2291F97F70028964B /* ComicRepository.swift */; };
+		FA3837302921204E00D538C6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38372F2921204E00D538C6 /* HomeViewModel.swift */; };
+		FA3837332921268C00D538C6 /* ComicCellProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3837322921268C00D538C6 /* ComicCellProperties.swift */; };
 		FA65AECC291FB20300BD723A /* ComicRepository+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */; };
-		FA7266D3291F97F70028964B /* ComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D2291F97F70028964B /* ComicRepository.swift */; };
-		FA7266D4291F97F70028964B /* ComicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D2291F97F70028964B /* ComicRepository.swift */; };
 		FA7266D6291F9C110028964B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D5291F9C110028964B /* NetworkManager.swift */; };
-		FA7266D7291F9C110028964B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D5291F9C110028964B /* NetworkManager.swift */; };
 		FA7266D9291F9CAA0028964B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D8291F9CAA0028964B /* ReachabilityManager.swift */; };
-		FA7266DA291F9CAA0028964B /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266D8291F9CAA0028964B /* ReachabilityManager.swift */; };
-		FA7266DF291F9DEE0028964B /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266DE291F9DEE0028964B /* ApiError.swift */; };
-		FA7266E0291F9DEE0028964B /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7266DE291F9DEE0028964B /* ApiError.swift */; };
 		FA87BEF9291D8AFB003759A8 /* ShortcutterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BEF8291D8AFB003759A8 /* ShortcutterApp.swift */; };
 		FA87BEFB291D8AFB003759A8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BEFA291D8AFB003759A8 /* RootView.swift */; };
 		FA87BEFD291D8AFC003759A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA87BEFC291D8AFC003759A8 /* Assets.xcassets */; };
 		FA87BF00291D8AFC003759A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA87BEFF291D8AFC003759A8 /* Preview Assets.xcassets */; };
-		FA87BF0A291D8AFC003759A8 /* ShortcutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF09291D8AFC003759A8 /* ShortcutterTests.swift */; };
 		FA87BF14291D8AFC003759A8 /* ShortcutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF13291D8AFC003759A8 /* ShortcutterUITests.swift */; };
 		FA87BF16291D8AFC003759A8 /* ShortcutterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF15291D8AFC003759A8 /* ShortcutterUITestsLaunchTests.swift */; };
 		FA87BF2E291D9423003759A8 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF2D291D9423003759A8 /* TabController.swift */; };
 		FA87BF30291D94FC003759A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF2F291D94FC003759A8 /* HomeView.swift */; };
-		FA87BF32291D95B3003759A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF31291D95B3003759A8 /* HomeViewModel.swift */; };
-		FA87BF33291D95B3003759A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF31291D95B3003759A8 /* HomeViewModel.swift */; };
 		FA87BF36291DA100003759A8 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF35291DA100003759A8 /* Comic.swift */; };
-		FA87BF37291DA100003759A8 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF35291DA100003759A8 /* Comic.swift */; };
 		FA87BF39291DA1D9003759A8 /* CurrentComicTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA87BF34291D9DDA003759A8 /* CurrentComicTestData.json */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA3837212920FAA000D538C6 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		FA38372F2921204E00D538C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA3837322921268C00D538C6 /* ComicCellProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCellProperties.swift; sourceTree = "<group>"; };
 		FA65AECB291FB20300BD723A /* ComicRepository+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComicRepository+Constants.swift"; sourceTree = "<group>"; };
 		FA7266D2291F97F70028964B /* ComicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRepository.swift; sourceTree = "<group>"; };
 		FA7266D5291F9C110028964B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		FA87BF15291D8AFC003759A8 /* ShortcutterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA87BF2D291D9423003759A8 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		FA87BF2F291D94FC003759A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		FA87BF31291D95B3003759A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FA87BF34291D9DDA003759A8 /* CurrentComicTestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentComicTestData.json; sourceTree = "<group>"; };
 		FA87BF35291DA100003759A8 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA3837312921267800D538C6 /* ComicCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA3837212920FAA000D538C6 /* ComicCell.swift */,
+				FA3837322921268C00D538C6 /* ComicCellProperties.swift */,
+			);
+			path = ComicCell;
+			sourceTree = "<group>";
+		};
 		FA87BEEC291D8AFB003759A8 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +180,7 @@
 		FA87BF23291D8F02003759A8 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FA3837312921267800D538C6 /* ComicCell */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -225,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				FA87BF2F291D94FC003759A8 /* HomeView.swift */,
-				FA87BF31291D95B3003759A8 /* HomeViewModel.swift */,
+				FA38372F2921204E00D538C6 /* HomeViewModel.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -390,17 +400,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3837242921192000D538C6 /* ComicRepository.swift in Sources */,
+				FA3837232921190000D538C6 /* ApiError.swift in Sources */,
 				FA87BEFB291D8AFB003759A8 /* RootView.swift in Sources */,
 				FA87BF36291DA100003759A8 /* Comic.swift in Sources */,
 				FA87BF30291D94FC003759A8 /* HomeView.swift in Sources */,
-				FA7266D3291F97F70028964B /* ComicRepository.swift in Sources */,
 				FA7266D9291F9CAA0028964B /* ReachabilityManager.swift in Sources */,
 				FA7266D6291F9C110028964B /* NetworkManager.swift in Sources */,
 				FA65AECC291FB20300BD723A /* ComicRepository+Constants.swift in Sources */,
+				FA3837302921204E00D538C6 /* HomeViewModel.swift in Sources */,
 				FA87BF2E291D9423003759A8 /* TabController.swift in Sources */,
-				FA87BF32291D95B3003759A8 /* HomeViewModel.swift in Sources */,
+				FA3837332921268C00D538C6 /* ComicCellProperties.swift in Sources */,
+				FA3837222920FAA000D538C6 /* ComicCell.swift in Sources */,
 				FA87BEF9291D8AFB003759A8 /* ShortcutterApp.swift in Sources */,
-				FA7266DF291F9DEE0028964B /* ApiError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,13 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA87BF0A291D8AFC003759A8 /* ShortcutterTests.swift in Sources */,
-				FA87BF37291DA100003759A8 /* Comic.swift in Sources */,
-				FA7266D7291F9C110028964B /* NetworkManager.swift in Sources */,
-				FA87BF33291D95B3003759A8 /* HomeViewModel.swift in Sources */,
-				FA7266E0291F9DEE0028964B /* ApiError.swift in Sources */,
-				FA7266DA291F9CAA0028964B /* ReachabilityManager.swift in Sources */,
-				FA7266D4291F97F70028964B /* ComicRepository.swift in Sources */,
+				FA38372E29211F8200D538C6 /* ComicRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +428,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA38372A29211A6A00D538C6 /* HomeView.swift in Sources */,
+				FA38372C29211DB400D538C6 /* ComicCell.swift in Sources */,
 				FA87BF16291D8AFC003759A8 /* ShortcutterUITestsLaunchTests.swift in Sources */,
 				FA87BF14291D8AFC003759A8 /* ShortcutterUITests.swift in Sources */,
 			);
@@ -493,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -547,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -628,6 +636,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = lv.armandsberzins.ShortcutterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -648,6 +657,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = lv.armandsberzins.ShortcutterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;

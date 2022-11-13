@@ -14,7 +14,7 @@ struct HomeView: View {
         VStack {
             if let comics = homeViewModel.comics {
                 List(comics) { comic in
-                    Text(comic.title ?? "")
+                    ComicCell(properties: comic)
                 }.navigationTitle("Comics")
             } else {
                 Text("No Comics :/")
