@@ -15,9 +15,9 @@ struct RootView: View {
             HomeView()
                 .tag(Tab.home)
                 .tabItem { Label("", systemImage: "photo") }
-            HomeView()
-                .tag(Tab.offline)
-                .tabItem { Label("", systemImage: "archivebox.fill")}
+            Text("Favourites Coming soon")
+                .tag(Tab.favourites)
+                .tabItem { Label("", systemImage: "star.fill")}
         }
     }
 }

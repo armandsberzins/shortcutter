@@ -16,6 +16,8 @@ extension HomeView {
         
         //MARK: - Outlets
         @Published var comics: ComicsViewProperies?
+        @Published var showAlert: Bool = false
+        @Published var error: ApiError? = nil
         
         //MARK: - Constant
         let kDefaultIssueAmountForLaod = 10
@@ -81,10 +83,12 @@ extension HomeView {
         private func handle(_ completion: Subscribers.Completion<ApiError>) {
             switch completion {
             case .failure(let apiError):
-                //show api error
-                 print(apiError.localizedDescription)
-            case .finished: break
+                self.error = apiError
+            case .finished:
+                self.error = nil
             }
+            
+            self.showAlert = self.error != nil
         }
         
         //MARK: - Deinit

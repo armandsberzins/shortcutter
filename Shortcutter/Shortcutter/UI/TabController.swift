@@ -18,5 +18,5 @@ class TabController: ObservableObject {
 
 enum Tab {
     case home
-    case offline
+    case favourites
 }

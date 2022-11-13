@@ -214,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				FA87BF2B291D90AF003759A8 /* ComicDetailsView */,
-				FA87BF2A291D909B003759A8 /* OfflineView */,
+				FA87BF2A291D909B003759A8 /* FavoritesView */,
 				FA87BF29291D9081003759A8 /* HomeView */,
 			);
 			path = ViewContainers;
@@ -264,11 +264,11 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
-		FA87BF2A291D909B003759A8 /* OfflineView */ = {
+		FA87BF2A291D909B003759A8 /* FavoritesView */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = OfflineView;
+			path = FavoritesView;
 			sourceTree = "<group>";
 		};
 		FA87BF2B291D90AF003759A8 /* ComicDetailsView */ = {
