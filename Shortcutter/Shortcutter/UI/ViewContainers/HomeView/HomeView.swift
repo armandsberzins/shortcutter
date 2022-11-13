@@ -12,10 +12,17 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text(homeViewModel.title ?? "")
+            if let comics = homeViewModel.comics {
+                List(comics) { comic in
+                    Text(comic.title ?? "")
+                }.navigationTitle("Comics")
+            } else {
+                Text("No Comics :/")
+            }
+            
+            Button("Load more comics", action: {
+                homeViewModel.getNext()
+            })
         }
         .padding()
     }
