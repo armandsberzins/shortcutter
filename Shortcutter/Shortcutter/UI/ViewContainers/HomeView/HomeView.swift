@@ -16,13 +16,15 @@ struct HomeView: View {
                 List(comics) { comic in
                     ComicCell(properties: comic)
                 }.navigationTitle("Comics")
+                
+                Spacer()
+                
+                Button("Load more comics", action: {
+                    homeViewModel.getNext()
+                })
             } else {
-                Text("No Comics :/")
+                ProgressView()
             }
-            
-            Button("Load more comics", action: {
-                homeViewModel.getNext()
-            })
         }
         .padding()
     }
