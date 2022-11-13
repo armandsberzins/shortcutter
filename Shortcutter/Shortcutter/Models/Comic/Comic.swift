@@ -7,9 +7,7 @@
 
 import Foundation
 
-struct Comic: Codable, Identifiable {
-    var id = UUID()
-    
+struct Comic: Codable {    
     let month: String?
     let num: Int?
     let link, year, news, safeTitle: String?

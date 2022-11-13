@@ -15,7 +15,9 @@ extension HomeView {
         let comicRepo: ComicRepositoryProtocol
         
         //MARK: - Outlets
-        @Published var comics: Comics?
+        @Published var comics: ComicsViewProperies?
+        @Published var showAlert: Bool = false
+        @Published var error: ApiError? = nil
         
         //MARK: - Constant
         let kDefaultIssueAmountForLaod = 10
@@ -57,10 +59,14 @@ extension HomeView {
         //MARK: - Handle received data
         
         private func add(_ comic: Comic) {
+            let cellModel = ComicCellPorperties(title: comic.title,
+                                                issue: comic.num,
+                                                imageUrl: comic.img)
+            
             if self.comics == nil {
-                self.comics = Comics(arrayLiteral: comic)
+                self.comics = ComicsViewProperies(arrayLiteral: cellModel)
             } else {
-                self.comics?.append(comic)
+                self.comics?.append(cellModel)
             }
         }
         
@@ -77,10 +83,12 @@ extension HomeView {
         private func handle(_ completion: Subscribers.Completion<ApiError>) {
             switch completion {
             case .failure(let apiError):
-                //show api error
-                 print(apiError.localizedDescription)
-            case .finished: break
+                self.error = apiError
+            case .finished:
+                self.error = nil
             }
+            
+            self.showAlert = self.error != nil
         }
         
         //MARK: - Deinit
