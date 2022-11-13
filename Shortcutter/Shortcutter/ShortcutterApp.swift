@@ -11,7 +11,7 @@ import SwiftUI
 struct ShortcutterApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+            ContentView()
         }
     }
 }
